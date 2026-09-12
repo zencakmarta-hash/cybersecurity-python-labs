@@ -13,7 +13,7 @@ BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
 if BASE_DIR not in sys.path:
     sys.path.append(BASE_DIR)
 
-from shared.student import VARIANT_NUMBER
+from shared.student import VARIANT_NUMBER # noqa: E402
 
 # Константи для Варіанта 11
 MIN_PASSWORD_LENGTH = 12
@@ -90,9 +90,7 @@ def log_event(func):
             log_entry = {
                 "event": "login",
                 "user": username,
-                "result": (
-                    result_status if "result_status" in locals() else "failure"
-                ),
+                "result": (result_status if "result_status" in locals() else "failure"),
                 "timestamp": timestamp,
                 "args": [str(a) for a in args],
                 "kwargs": {k: str(v) for k, v in kwargs.items()},
@@ -175,7 +173,9 @@ def run_task3():
 
         # Неіснуючий користувач
         auth_no_user = login("unknown_user", "RandomPass1234", users_db)
-        print(f"Спроба 3 (неіснуючий логін): {'Успішно' if auth_no_user else 'Невдача'}")
+        print(
+            f"Спроба 3 (неіснуючий логін): {'Успішно' if auth_no_user else 'Невдача'}"
+        )
 
         print(f"\nЛоги подій успішно оновлено у {JSON_PATH}")
 

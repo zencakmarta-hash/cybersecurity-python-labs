@@ -4,7 +4,9 @@ import random
 import string
 
 
-def evaluate_password(pwd: str, all_passwords: list, criteria: dict, forbidden: set) -> str:
+def evaluate_password(
+    pwd: str, all_passwords: list, criteria: dict, forbidden: set
+) -> str:
     """Оцінює надійність пароля за заданими критеріями."""
     # 1. Заборонений: у списку forbidden або коротший за min_length
     if pwd in forbidden or len(pwd) < criteria["min_length"]:
@@ -16,10 +18,16 @@ def evaluate_password(pwd: str, all_passwords: list, criteria: dict, forbidden: 
     has_special = any(c in string.punctuation for c in pwd)
 
     # Перевірка виконання абсолютно всіх критеріїв безпеки
-    meets_all = has_digit and has_upper and has_special and (len(pwd) >= criteria["min_length"])
+    meets_all = (
+        has_digit and has_upper and has_special and (len(pwd) >= criteria["min_length"])
+    )
 
     # 2. Дуже сильний: всі критерії + довжина >= min_length + 4 + унікальний
-    if meets_all and len(pwd) >= (criteria["min_length"] + 4) and all_passwords.count(pwd) == 1:
+    if (
+        meets_all
+        and len(pwd) >= (criteria["min_length"] + 4)
+        and all_passwords.count(pwd) == 1
+    ):
         return "Дуже сильний"
 
     # 3. Сильний: всі критерії, але довжина < min_length + 4
