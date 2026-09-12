@@ -87,3 +87,6 @@ def run_task1():
     for pwd in passwords:
         category = evaluate_password(pwd, passwords, criteria, forbidden_passwords)
         print(f"{pwd:<20} | {category:<20}")
+
+if __name__ == "__main__":
+    run_task1()
