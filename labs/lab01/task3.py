@@ -128,8 +128,6 @@ def login(username: str, password: str, users_db: list[dict[str, str]]) -> bool:
 
 
 def run_task3():
-    """Головна функція для виконання Завдання 3."""
-    print("--- Запуск Завдання 3 (Варіант 11, blake2b) ---")
 
     # Кортеж із 10 користувачів (усі паролі >= 12 символів)
     users_to_register = (

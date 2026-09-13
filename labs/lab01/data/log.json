@@ -190,5 +190,53 @@
       "[{'username': 'admin_sec', 'password_hash': 'a5daf75a9a42142d1208ac0c7772b3ba9b3fdb7ddcbfd2295bac623da8e304352609912c267e6bfb93a5cb28cd9dbe345d4c7267abcc352aac07059fd87a36f2'}, {'username': 'cyber_analyst', 'password_hash': '917e66b28c90281e660b4b7e4bf072082d7eb90aa15b725a32b354a92380125a6e6335b5bcc9ed2903e95670cdeee252b34f1c29d59b05770761ef25c2be2755'}, {'username': 'm_zhenchak', 'password_hash': 'a643721ffa00739cdc2acc337b9769744d4e61e11862a6321212b646577e60c363af54741ec600663d13155cf5ee61361db7aca89d8f35e915e4c1e4033eb717'}, {'username': 'dev_ops_user', 'password_hash': '499e132a0059c1d27e121c609b14aee6c4d341476545e23991ed2dfa37072352e7178c7e85c64f94184024f47208c40f0302bb0da916899d7cb5ab8de4d1b226'}, {'username': 'net_engineer', 'password_hash': '591cc598de6f6fbbef3c492803e7650113f0937a0faf5b362187b3438f1079c81ced1da722f2c8ffae0f66bbf44be980565b3e840b0dd3e15d66de87bea89df2'}, {'username': 'audit_lead', 'password_hash': '2da0246ed872c4c6d45a26e209fbe0f51f9b2b3972f2f9fffe30af835c36d943ab4fa2dbdc93c13a3327c0efc6cabc5ae180ae0da3a5c57a870ff9da2cb9d9d9'}, {'username': 'incident_resp', 'password_hash': 'ba3050cfe8f84bf8579c3568a4f5944bf18b7512d43d6375c71add839aaf0c521cb4c01e1f6ef53d77bf91d16ced7a6f31a97452f3f71ae76731d8d34ca2aa62'}, {'username': 'cloud_architect', 'password_hash': '83aa2e34a5fbed14dda3688562d1166ab09839015c044f1e0067d3e9d7e0c059c86052e078e08d342c71f58ea318c5e4a1811d445011a66471b5eae2fa844241'}, {'username': 'qa_security', 'password_hash': '3386f6bc3e2ea4f7321379af3abaf304e7e0a1a293911886cbbb1cb404485cc09a374f60633f776c06901b69ec7a759ae687651dcfe9261aec1a15a880614769'}, {'username': 'guest_monitor', 'password_hash': '2f8c9e2dcb4a7e0ec21a4b85c965e24b0a0dd7da3ba025f3a528657375af3e3f919cb88bfb5d9e6ec3d7e5862237c4e5f98c4bda7bdd6429e40a5abacff6ae15'}]"
     ],
     "kwargs": {}
+  },
+  {
+    "event": "login",
+    "user": "m_zhenchak",
+    "result": "success",
+    "timestamp": "2026-09-13 12:54:19",
+    "args": [
+      "m_zhenchak",
+      "SuperSecret#2026",
+      "[{'username': 'admin_sec', 'password_hash': 'a5daf75a9a42142d1208ac0c7772b3ba9b3fdb7ddcbfd2295bac623da8e304352609912c267e6bfb93a5cb28cd9dbe345d4c7267abcc352aac07059fd87a36f2'}, {'username': 'cyber_analyst', 'password_hash': '917e66b28c90281e660b4b7e4bf072082d7eb90aa15b725a32b354a92380125a6e6335b5bcc9ed2903e95670cdeee252b34f1c29d59b05770761ef25c2be2755'}, {'username': 'm_zhenchak', 'password_hash': 'a643721ffa00739cdc2acc337b9769744d4e61e11862a6321212b646577e60c363af54741ec600663d13155cf5ee61361db7aca89d8f35e915e4c1e4033eb717'}, {'username': 'dev_ops_user', 'password_hash': '499e132a0059c1d27e121c609b14aee6c4d341476545e23991ed2dfa37072352e7178c7e85c64f94184024f47208c40f0302bb0da916899d7cb5ab8de4d1b226'}, {'username': 'net_engineer', 'password_hash': '591cc598de6f6fbbef3c492803e7650113f0937a0faf5b362187b3438f1079c81ced1da722f2c8ffae0f66bbf44be980565b3e840b0dd3e15d66de87bea89df2'}, {'username': 'audit_lead', 'password_hash': '2da0246ed872c4c6d45a26e209fbe0f51f9b2b3972f2f9fffe30af835c36d943ab4fa2dbdc93c13a3327c0efc6cabc5ae180ae0da3a5c57a870ff9da2cb9d9d9'}, {'username': 'incident_resp', 'password_hash': 'ba3050cfe8f84bf8579c3568a4f5944bf18b7512d43d6375c71add839aaf0c521cb4c01e1f6ef53d77bf91d16ced7a6f31a97452f3f71ae76731d8d34ca2aa62'}, {'username': 'cloud_architect', 'password_hash': '83aa2e34a5fbed14dda3688562d1166ab09839015c044f1e0067d3e9d7e0c059c86052e078e08d342c71f58ea318c5e4a1811d445011a66471b5eae2fa844241'}, {'username': 'qa_security', 'password_hash': '3386f6bc3e2ea4f7321379af3abaf304e7e0a1a293911886cbbb1cb404485cc09a374f60633f776c06901b69ec7a759ae687651dcfe9261aec1a15a880614769'}, {'username': 'guest_monitor', 'password_hash': '2f8c9e2dcb4a7e0ec21a4b85c965e24b0a0dd7da3ba025f3a528657375af3e3f919cb88bfb5d9e6ec3d7e5862237c4e5f98c4bda7bdd6429e40a5abacff6ae15'}]"
+    ],
+    "kwargs": {}
+  },
+  {
+    "event": "login",
+    "user": "m_zhenchak",
+    "result": "failure",
+    "timestamp": "2026-09-13 12:54:19",
+    "args": [
+      "m_zhenchak",
+      "WrongPassword#9",
+      "[{'username': 'admin_sec', 'password_hash': 'a5daf75a9a42142d1208ac0c7772b3ba9b3fdb7ddcbfd2295bac623da8e304352609912c267e6bfb93a5cb28cd9dbe345d4c7267abcc352aac07059fd87a36f2'}, {'username': 'cyber_analyst', 'password_hash': '917e66b28c90281e660b4b7e4bf072082d7eb90aa15b725a32b354a92380125a6e6335b5bcc9ed2903e95670cdeee252b34f1c29d59b05770761ef25c2be2755'}, {'username': 'm_zhenchak', 'password_hash': 'a643721ffa00739cdc2acc337b9769744d4e61e11862a6321212b646577e60c363af54741ec600663d13155cf5ee61361db7aca89d8f35e915e4c1e4033eb717'}, {'username': 'dev_ops_user', 'password_hash': '499e132a0059c1d27e121c609b14aee6c4d341476545e23991ed2dfa37072352e7178c7e85c64f94184024f47208c40f0302bb0da916899d7cb5ab8de4d1b226'}, {'username': 'net_engineer', 'password_hash': '591cc598de6f6fbbef3c492803e7650113f0937a0faf5b362187b3438f1079c81ced1da722f2c8ffae0f66bbf44be980565b3e840b0dd3e15d66de87bea89df2'}, {'username': 'audit_lead', 'password_hash': '2da0246ed872c4c6d45a26e209fbe0f51f9b2b3972f2f9fffe30af835c36d943ab4fa2dbdc93c13a3327c0efc6cabc5ae180ae0da3a5c57a870ff9da2cb9d9d9'}, {'username': 'incident_resp', 'password_hash': 'ba3050cfe8f84bf8579c3568a4f5944bf18b7512d43d6375c71add839aaf0c521cb4c01e1f6ef53d77bf91d16ced7a6f31a97452f3f71ae76731d8d34ca2aa62'}, {'username': 'cloud_architect', 'password_hash': '83aa2e34a5fbed14dda3688562d1166ab09839015c044f1e0067d3e9d7e0c059c86052e078e08d342c71f58ea318c5e4a1811d445011a66471b5eae2fa844241'}, {'username': 'qa_security', 'password_hash': '3386f6bc3e2ea4f7321379af3abaf304e7e0a1a293911886cbbb1cb404485cc09a374f60633f776c06901b69ec7a759ae687651dcfe9261aec1a15a880614769'}, {'username': 'guest_monitor', 'password_hash': '2f8c9e2dcb4a7e0ec21a4b85c965e24b0a0dd7da3ba025f3a528657375af3e3f919cb88bfb5d9e6ec3d7e5862237c4e5f98c4bda7bdd6429e40a5abacff6ae15'}]"
+    ],
+    "kwargs": {}
+  },
+  {
+    "event": "login",
+    "user": "unknown_user",
+    "result": "failure",
+    "timestamp": "2026-09-13 12:54:19",
+    "args": [
+      "unknown_user",
+      "RandomPass1234",
+      "[{'username': 'admin_sec', 'password_hash': 'a5daf75a9a42142d1208ac0c7772b3ba9b3fdb7ddcbfd2295bac623da8e304352609912c267e6bfb93a5cb28cd9dbe345d4c7267abcc352aac07059fd87a36f2'}, {'username': 'cyber_analyst', 'password_hash': '917e66b28c90281e660b4b7e4bf072082d7eb90aa15b725a32b354a92380125a6e6335b5bcc9ed2903e95670cdeee252b34f1c29d59b05770761ef25c2be2755'}, {'username': 'm_zhenchak', 'password_hash': 'a643721ffa00739cdc2acc337b9769744d4e61e11862a6321212b646577e60c363af54741ec600663d13155cf5ee61361db7aca89d8f35e915e4c1e4033eb717'}, {'username': 'dev_ops_user', 'password_hash': '499e132a0059c1d27e121c609b14aee6c4d341476545e23991ed2dfa37072352e7178c7e85c64f94184024f47208c40f0302bb0da916899d7cb5ab8de4d1b226'}, {'username': 'net_engineer', 'password_hash': '591cc598de6f6fbbef3c492803e7650113f0937a0faf5b362187b3438f1079c81ced1da722f2c8ffae0f66bbf44be980565b3e840b0dd3e15d66de87bea89df2'}, {'username': 'audit_lead', 'password_hash': '2da0246ed872c4c6d45a26e209fbe0f51f9b2b3972f2f9fffe30af835c36d943ab4fa2dbdc93c13a3327c0efc6cabc5ae180ae0da3a5c57a870ff9da2cb9d9d9'}, {'username': 'incident_resp', 'password_hash': 'ba3050cfe8f84bf8579c3568a4f5944bf18b7512d43d6375c71add839aaf0c521cb4c01e1f6ef53d77bf91d16ced7a6f31a97452f3f71ae76731d8d34ca2aa62'}, {'username': 'cloud_architect', 'password_hash': '83aa2e34a5fbed14dda3688562d1166ab09839015c044f1e0067d3e9d7e0c059c86052e078e08d342c71f58ea318c5e4a1811d445011a66471b5eae2fa844241'}, {'username': 'qa_security', 'password_hash': '3386f6bc3e2ea4f7321379af3abaf304e7e0a1a293911886cbbb1cb404485cc09a374f60633f776c06901b69ec7a759ae687651dcfe9261aec1a15a880614769'}, {'username': 'guest_monitor', 'password_hash': '2f8c9e2dcb4a7e0ec21a4b85c965e24b0a0dd7da3ba025f3a528657375af3e3f919cb88bfb5d9e6ec3d7e5862237c4e5f98c4bda7bdd6429e40a5abacff6ae15'}]"
+    ],
+    "kwargs": {}
+  },
+  {
+    "event": "login",
+    "user": "",
+    "result": "failure (ValueError)",
+    "timestamp": "2026-09-13 12:54:19",
+    "args": [
+      "",
+      "SomeValidPassword123",
+      "[{'username': 'admin_sec', 'password_hash': 'a5daf75a9a42142d1208ac0c7772b3ba9b3fdb7ddcbfd2295bac623da8e304352609912c267e6bfb93a5cb28cd9dbe345d4c7267abcc352aac07059fd87a36f2'}, {'username': 'cyber_analyst', 'password_hash': '917e66b28c90281e660b4b7e4bf072082d7eb90aa15b725a32b354a92380125a6e6335b5bcc9ed2903e95670cdeee252b34f1c29d59b05770761ef25c2be2755'}, {'username': 'm_zhenchak', 'password_hash': 'a643721ffa00739cdc2acc337b9769744d4e61e11862a6321212b646577e60c363af54741ec600663d13155cf5ee61361db7aca89d8f35e915e4c1e4033eb717'}, {'username': 'dev_ops_user', 'password_hash': '499e132a0059c1d27e121c609b14aee6c4d341476545e23991ed2dfa37072352e7178c7e85c64f94184024f47208c40f0302bb0da916899d7cb5ab8de4d1b226'}, {'username': 'net_engineer', 'password_hash': '591cc598de6f6fbbef3c492803e7650113f0937a0faf5b362187b3438f1079c81ced1da722f2c8ffae0f66bbf44be980565b3e840b0dd3e15d66de87bea89df2'}, {'username': 'audit_lead', 'password_hash': '2da0246ed872c4c6d45a26e209fbe0f51f9b2b3972f2f9fffe30af835c36d943ab4fa2dbdc93c13a3327c0efc6cabc5ae180ae0da3a5c57a870ff9da2cb9d9d9'}, {'username': 'incident_resp', 'password_hash': 'ba3050cfe8f84bf8579c3568a4f5944bf18b7512d43d6375c71add839aaf0c521cb4c01e1f6ef53d77bf91d16ced7a6f31a97452f3f71ae76731d8d34ca2aa62'}, {'username': 'cloud_architect', 'password_hash': '83aa2e34a5fbed14dda3688562d1166ab09839015c044f1e0067d3e9d7e0c059c86052e078e08d342c71f58ea318c5e4a1811d445011a66471b5eae2fa844241'}, {'username': 'qa_security', 'password_hash': '3386f6bc3e2ea4f7321379af3abaf304e7e0a1a293911886cbbb1cb404485cc09a374f60633f776c06901b69ec7a759ae687651dcfe9261aec1a15a880614769'}, {'username': 'guest_monitor', 'password_hash': '2f8c9e2dcb4a7e0ec21a4b85c965e24b0a0dd7da3ba025f3a528657375af3e3f919cb88bfb5d9e6ec3d7e5862237c4e5f98c4bda7bdd6429e40a5abacff6ae15'}]"
+    ],
+    "kwargs": {}
   }
 ]
