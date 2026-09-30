@@ -14,7 +14,9 @@ if BASE_DIR not in sys.path:
 try:
     from shared.student import VARIANT_NUMBER  # noqa: E402
 except ImportError as e:
-    print(f"[Помилка Імпорту] Не вдалося завантажити VARIANT_NUMBER, встановлено 1 за замовчуванням: {e}")
+    print(
+        f"[Помилка Імпорту] Не вдалося завантажити VARIANT_NUMBER, встановлено 1 за замовчуванням: {e}"
+    )
     VARIANT_NUMBER = 1
 except Exception as e:
     print(f"[Неочікувана помилка імпорту]: {e}")
@@ -29,7 +31,9 @@ JSON_PATH = os.path.join(DATA_DIR, "log.json")
 
 class ValidationError(Exception):
     """Виняток для паролів, що не відповідають мінімальній довжині."""
+
     pass
+
 
 def generate_hash(password: str, salt: str = "00000") -> str:
     """Генерує blake2b хеш від конкатенації пароля та солі."""
@@ -38,7 +42,6 @@ def generate_hash(password: str, salt: str = "00000") -> str:
         raise TypeError("Пароль та сіль повинні бути текстовими рядками (str).")
     if not password or not salt:
         raise ValueError("Пароль або сіль не можуть бути порожніми.")
-
 
     if len(password) < MIN_PASSWORD_LENGTH:
         raise ValidationError(
@@ -49,7 +52,6 @@ def generate_hash(password: str, salt: str = "00000") -> str:
         salted_data = (password + salt).encode("utf-8")
         return hashlib.blake2b(salted_data).hexdigest()
     except Exception as e:
-
         raise RuntimeError(f"Критична помилка при генерації хешу: {e}")
 
 
@@ -91,7 +93,9 @@ def create_users(users_list: tuple) -> None:
                     if user_entry[1] is not None:
                         writer.writerow(user_entry)
                 except ValueError as e:
-                    print(f"[Помилка Розпакування] Неправильний формат даних користувача: {e}")
+                    print(
+                        f"[Помилка Розпакування] Неправильний формат даних користувача: {e}"
+                    )
                 except TypeError as e:
                     print(f"[Помилка Типу] Дані користувача пошкоджені: {e}")
                 except Exception as e:
@@ -175,13 +179,19 @@ def log_event(func):
                     json.dump(existing_logs, jf, indent=2, ensure_ascii=False)
 
             except json.JSONDecodeError as log_err:
-                print(f"[Помилка JSON] Файл логів {JSON_PATH} пошкоджено. Лог не записано: {log_err}")
+                print(
+                    f"[Помилка JSON] Файл логів {JSON_PATH} пошкоджено. Лог не записано: {log_err}"
+                )
             except FileNotFoundError as log_err:
                 print(f"[Помилка Логування] Файл або директорію не знайдено: {log_err}")
             except PermissionError as log_err:
-                print(f"[Помилка Логування] Відмовлено в доступі до {JSON_PATH}: {log_err}")
+                print(
+                    f"[Помилка Логування] Відмовлено в доступі до {JSON_PATH}: {log_err}"
+                )
             except IOError as log_err:
-                print(f"[Помилка Логування] Не вдалося оновити JSON (IOError): {log_err}")
+                print(
+                    f"[Помилка Логування] Не вдалося оновити JSON (IOError): {log_err}"
+                )
             except Exception as log_err:
                 print(f"[Неочікувана помилка логування]: {log_err}")
 
@@ -222,8 +232,10 @@ def run_task3():
             ("cyber_analyst", "SafePassword!99"),
             ("m_zhenchak", "SuperSecret#2026"),
             ("short_user", "123"),  # Викличе ValidationError
-            ("wrong_format_user",),  # Викличе ValueError (помилка розпакування в create_users)
-            12345  # Викличе TypeError у циклі розпакування
+            (
+                "wrong_format_user",
+            ),  # Викличе ValueError (помилка розпакування в create_users)
+            12345,  # Викличе TypeError у циклі розпакування
         )
 
         print("1. Збереження користувачів у CSV...")
@@ -251,7 +263,9 @@ def run_task3():
 
         # Спроба з неправильним типом даних (викличе TypeError)
         auth_type = login("admin_sec", 12345, users_db)
-        print(f"Спроба 3 (неправильний тип пароля): {'Успішно' if auth_type else 'Невдача'}")
+        print(
+            f"Спроба 3 (неправильний тип пароля): {'Успішно' if auth_type else 'Невдача'}"
+        )
 
     except Exception as general_err:
         print(f"[Критичний збій у програмі]: {general_err}")

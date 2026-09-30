@@ -1,0 +1,68 @@
+{
+    "summary": {
+        "valid_entries": 8,
+        "invalid_syntax": 3,
+        "conflicts_count": 1
+    },
+    "conflicts": [
+        {
+            "mac_address": "de:ad:be:ef:00:01",
+            "associated_ips": [
+                "192.168.1.20",
+                "192.168.1.21",
+                "192.168.1.22"
+            ],
+            "alert_message": "MAC Address Duplicate Conflict! MAC de:ad:be:ef:00:01 associated with MULTIPLE IP addresses: 192.168.1.20, 192.168.1.21, 192.168.1.22"
+        }
+    ],
+    "entries": [
+        {
+            "ip": "192.168.1.1",
+            "mac": "00:11:22:33:44:55",
+            "interface": "eth0",
+            "entry_type": "dynamic"
+        },
+        {
+            "ip": "192.168.1.10",
+            "mac": "AA:BB:CC:DD:EE:01",
+            "interface": "eth0",
+            "entry_type": "dynamic"
+        },
+        {
+            "ip": "192.168.1.11",
+            "mac": "AA:BB:CC:DD:EE:02",
+            "interface": "eth0",
+            "entry_type": "dynamic"
+        },
+        {
+            "ip": "192.168.1.12",
+            "mac": "AA:BB:CC:DD:EE:03",
+            "interface": "eth0",
+            "entry_type": "static"
+        },
+        {
+            "ip": "192.168.1.20",
+            "mac": "DE:AD:BE:EF:00:01",
+            "interface": "eth0",
+            "entry_type": "dynamic"
+        },
+        {
+            "ip": "192.168.1.21",
+            "mac": "DE:AD:BE:EF:00:01",
+            "interface": "eth0",
+            "entry_type": "dynamic"
+        },
+        {
+            "ip": "192.168.1.22",
+            "mac": "DE:AD:BE:EF:00:01",
+            "interface": "wlan0",
+            "entry_type": "dynamic"
+        },
+        {
+            "ip": "10.0.0.5",
+            "mac": "12:34:56:78:9A:BC",
+            "interface": "eth1",
+            "entry_type": "dynamic"
+        }
+    ]
+}
